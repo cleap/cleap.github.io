@@ -9,10 +9,8 @@
   - [What Can PA Do?](./animation/anim_what.md)
   - [How We Used PA](./animation/anim_us.md)
   - [Going Furhter](./animation/anim_resources.md)
-- [Procedural Music (PM)](./music.md)
+- [Procedural Music (PM)](./music/music_intro.md)
+  - [What Can PM Do?](./music/music_what.md)
+  - [How We Used PM](./music/music_us.md)
+  - [Going Further](./music/music_resources.md)
 - [Game Demo](./game.md)
-
----
-
-[References](./references.md)
-

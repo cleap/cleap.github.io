@@ -1,6 +1,9 @@
 # Procedural World Generation in the flesh
 
-Here are some examples of games that use procedural world generation.
+Procedural world generation is the process of generating a game's world
+based on a set of procedures. Many games use procedural world generation
+to give players a unique experience each playthrough.
+Below are some examples of games that use procedural world generation.
 
 ## Rogue
 
@@ -22,9 +25,11 @@ a genre of games heavily inspired by _Rogue_ called roguelikes. In
 _The Binding of Isaac_, the player also fights their way through procedurally
 generated floors, going deeper into the dungeon to reach the final Boss.
 
-## Spelunky
-
 ## Minecraft
 
-## No Man's Sky
+![Minecraft Screenshot](https://images-na.ssl-images-amazon.com/images/I/510KWdgceEL.jpg)
 
+[_Minecraft_](https://www.minecraft.net/en-us) is an open-world game from
+Mojang. The player(s) explore an infinite, procedurally generated, 3d-world,
+mining for resources, building shelters, and trying to survive and thrive in
+their world.
