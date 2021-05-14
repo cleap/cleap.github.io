@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - Spring 2021 Procedural Generation Independent Study</title>
+        <title>How We Used PWG - Spring 2021 Procedural Generation Independent Study</title>
         
         
 
@@ -18,28 +18,28 @@
         <meta name="theme-color" content="#ffffff" />
 
         
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="../favicon.svg">
         
         
-        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="../favicon.png">
         
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
         
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -52,7 +52,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -98,7 +98,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="world/world_intro.html"><strong aria-hidden="true">2.</strong> Procedural World Generation (PWG)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="world/world_what.html"><strong aria-hidden="true">2.1.</strong> What Can PWG Do?</a></li><li class="chapter-item expanded "><a href="world/world_us.html"><strong aria-hidden="true">2.2.</strong> How We Used PWG</a></li><li class="chapter-item expanded "><a href="world/world_resources.html"><strong aria-hidden="true">2.3.</strong> Going Further</a></li></ol></li><li class="chapter-item expanded "><a href="animation.html"><strong aria-hidden="true">3.</strong> Procedural Animation (PA)</a></li><li class="chapter-item expanded "><a href="music.html"><strong aria-hidden="true">4.</strong> Procedural Music (PM)</a></li><li class="chapter-item expanded "><a href="game.html"><strong aria-hidden="true">5.</strong> Game Demo</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="references.html">References</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../world/world_intro.html"><strong aria-hidden="true">2.</strong> Procedural World Generation (PWG)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../world/world_what.html"><strong aria-hidden="true">2.1.</strong> What Can PWG Do?</a></li><li class="chapter-item expanded "><a href="../world/world_us.html" class="active"><strong aria-hidden="true">2.2.</strong> How We Used PWG</a></li><li class="chapter-item expanded "><a href="../world/world_resources.html"><strong aria-hidden="true">2.3.</strong> Going Further</a></li></ol></li><li class="chapter-item expanded "><a href="../animation.html"><strong aria-hidden="true">3.</strong> Procedural Animation (PA)</a></li><li class="chapter-item expanded "><a href="../music.html"><strong aria-hidden="true">4.</strong> Procedural Music (PM)</a></li><li class="chapter-item expanded "><a href="../game.html"><strong aria-hidden="true">5.</strong> Game Demo</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../references.html">References</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,7 +134,7 @@
 
                     <div class="right-buttons">
                         
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         
@@ -166,18 +166,37 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
-<p>Procedural generation is a powerful tool that can be used to create specific, unique, and immersive content on a case by case basis, as opposed to hand-crafting every facet of the game. This allows game developers to create systems to give their players infinite or unique worlds to play in, character animations that adapt to their environments, music that changes to fit the mood, and much more. Popular games such as Minecraft, Spelunky, the Binding of Isaac, No Man’s Sky, and many others leverage random number generators with procedural techniques to generate their levels and worlds so that each playthrough is unique. Procedural animation is used in countless games for everything from turning a player's head to generating smoke to ragdoll physics. For a game development company, the ability to create procedural systems allows for more flexible content that can, in turn, make a more immersive and enjoyable player experience.</p>
-<p>This independent study will focus on three types of procedural content: procedural world/level generation, procedural animation, and procedural music. For each of these three facets of procedural content, we will gather resources and present them on a webpage to make the learning process easier for future game developers and present a small-scale demo to demonstrate one of the techniques. At the end of the semester, we will make a small game demo that utilizes techniques from all three disciplines of procedural content that we will present to a public audience.</p>
+                        <h1><a class="header" href="#how-we-used-procedural-world-generation" id="how-we-used-procedural-world-generation">How we used procedural world generation</a></h1>
+<p>In this section, we describe the different procedural world generation
+techniques we used to generate worlds.</p>
+<h2><a class="header" href="#terrain-generation" id="terrain-generation">Terrain Generation</a></h2>
+<iframe src="https://itch.io/embed/897492" height="167" width="552" frameborder="0"><a href="https://cleap.itch.io/procedural-world-generation-demo">Procedural World Generation Demo by Christopher Leap</a></iframe>
+<p><strong>Include screenshot of terrain here</strong></p>
+<p>For our purposes, the process of generating the terrain was split into three parts:</p>
+<ol>
+<li>Generate a world map</li>
+<li>Generate a terrain height map based off of the world map</li>
+<li>Place trees, rocks, grass, etc. around the terrain</li>
+</ol>
+<p><img src="http://www.jgallant.com/wp-content/uploads/2016/01/wrap1.png" alt="JGallant's wrapping map"></img></p>
+<p>OpenSimplex noise, JGallant, ...</p>
+<h2><a class="header" href="#village-creation" id="village-creation">Village creation</a></h2>
+<p>Random walker, ...</p>
+<h2><a class="header" href="#combining-the-two" id="combining-the-two">Combining the two</a></h2>
+<p>Minecraft, systems, ...</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="../world/world_what.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="world/world_intro.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../world/world_resources.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -189,9 +208,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="../world/world_what.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a rel="next" href="world/world_intro.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../world/world_resources.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -199,6 +222,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
@@ -214,14 +252,14 @@
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         

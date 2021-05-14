@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Sub Section - Spring 2021 Procedural Generation Independent Study</title>
+        <title>Procedural Animation (PA) - Spring 2021 Procedural Generation Independent Study</title>
         
         
 
@@ -98,7 +98,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="world.html"><strong aria-hidden="true">2.</strong> World Generation</a></li><li class="chapter-item expanded "><a href="animation.html"><strong aria-hidden="true">3.</strong> Procedural Animation</a></li><li class="chapter-item expanded "><a href="music.html"><strong aria-hidden="true">4.</strong> Procedural Music</a></li><li class="chapter-item expanded "><a href="game.html"><strong aria-hidden="true">5.</strong> Game Demo</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="game01.html" class="active"><strong aria-hidden="true">5.1.</strong> Sub Section</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="references.html">References</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="world/world_intro.html"><strong aria-hidden="true">2.</strong> Procedural World Generation (PWG)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="world/world_what.html"><strong aria-hidden="true">2.1.</strong> What Can PWG Do?</a></li><li class="chapter-item expanded "><a href="world/world_us.html"><strong aria-hidden="true">2.2.</strong> How We Used PWG</a></li><li class="chapter-item expanded "><a href="world/world_resources.html"><strong aria-hidden="true">2.3.</strong> Going Further</a></li></ol></li><li class="chapter-item expanded "><a href="animation.html" class="active"><strong aria-hidden="true">3.</strong> Procedural Animation (PA)</a></li><li class="chapter-item expanded "><a href="music.html"><strong aria-hidden="true">4.</strong> Procedural Music (PM)</a></li><li class="chapter-item expanded "><a href="game.html"><strong aria-hidden="true">5.</strong> Game Demo</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="references.html">References</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,20 +166,20 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#sub-section" id="sub-section">Sub Section</a></h1>
+                        <h1><a class="header" href="#procedural-animation" id="procedural-animation">Procedural Animation</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="game.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="world/world_resources.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="references.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="music.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -191,13 +191,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="game.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="world/world_resources.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="references.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="music.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -205,6 +205,21 @@
 
         </div>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
