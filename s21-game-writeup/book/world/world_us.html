@@ -98,7 +98,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../world/world_intro.html"><strong aria-hidden="true">2.</strong> Procedural World Generation (PWG)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../world/world_what.html"><strong aria-hidden="true">2.1.</strong> What Can PWG Do?</a></li><li class="chapter-item expanded "><a href="../world/world_us.html" class="active"><strong aria-hidden="true">2.2.</strong> How We Used PWG</a></li><li class="chapter-item expanded "><a href="../world/world_resources.html"><strong aria-hidden="true">2.3.</strong> Going Further</a></li></ol></li><li class="chapter-item expanded "><a href="../animation.html"><strong aria-hidden="true">3.</strong> Procedural Animation (PA)</a></li><li class="chapter-item expanded "><a href="../music.html"><strong aria-hidden="true">4.</strong> Procedural Music (PM)</a></li><li class="chapter-item expanded "><a href="../game.html"><strong aria-hidden="true">5.</strong> Game Demo</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../references.html">References</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../world/world_intro.html"><strong aria-hidden="true">2.</strong> Procedural World Generation (PWG)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../world/world_what.html"><strong aria-hidden="true">2.1.</strong> What Can PWG Do?</a></li><li class="chapter-item expanded "><a href="../world/world_us.html" class="active"><strong aria-hidden="true">2.2.</strong> How We Used PWG</a></li><li class="chapter-item expanded "><a href="../world/world_resources.html"><strong aria-hidden="true">2.3.</strong> Going Further</a></li></ol></li><li class="chapter-item expanded "><a href="../animation/anim_intro.html"><strong aria-hidden="true">3.</strong> Procedural Animation (PA)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../animation/anim_what.html"><strong aria-hidden="true">3.1.</strong> What Can PA Do?</a></li><li class="chapter-item expanded "><a href="../animation/anim_us.html"><strong aria-hidden="true">3.2.</strong> How We Used PA</a></li><li class="chapter-item expanded "><a href="../animation/anim_resources.html"><strong aria-hidden="true">3.3.</strong> Going Furhter</a></li></ol></li><li class="chapter-item expanded "><a href="../music/music_intro.html"><strong aria-hidden="true">4.</strong> Procedural Music (PM)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../music/music_what.html"><strong aria-hidden="true">4.1.</strong> What Can PM Do?</a></li><li class="chapter-item expanded "><a href="../music/music_us.html"><strong aria-hidden="true">4.2.</strong> How We Used PM</a></li><li class="chapter-item expanded "><a href="../music/music_resources.html"><strong aria-hidden="true">4.3.</strong> Going Further</a></li></ol></li><li class="chapter-item expanded "><a href="../game.html"><strong aria-hidden="true">5.</strong> Game Demo</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,21 +169,48 @@
                         <h1><a class="header" href="#how-we-used-procedural-world-generation" id="how-we-used-procedural-world-generation">How we used procedural world generation</a></h1>
 <p>In this section, we describe the different procedural world generation
 techniques we used to generate worlds.</p>
-<h2><a class="header" href="#terrain-generation" id="terrain-generation">Terrain Generation</a></h2>
-<iframe src="https://itch.io/embed/897492" height="167" width="552" frameborder="0"><a href="https://cleap.itch.io/procedural-world-generation-demo">Procedural World Generation Demo by Christopher Leap</a></iframe>
-<p><strong>Include screenshot of terrain here</strong></p>
+<h2><a class="header" href="#terrain-generation" id="terrain-generation">Terrain generation</a></h2>
+<p><img src="screenshots/terrain.PNG" alt="Procedural World Generation Screenshot" /></p>
+<p>We implemented a procedural terrain generation algorithm in Godot to create
+wrapping worlds that consist of landmasses, oceans, lakes, biomes, and
+villages.</p>
 <p>For our purposes, the process of generating the terrain was split into three parts:</p>
 <ol>
 <li>Generate a world map</li>
 <li>Generate a terrain height map based off of the world map</li>
-<li>Place trees, rocks, grass, etc. around the terrain</li>
+<li>Place villages around the terrain</li>
 </ol>
-<p><img src="http://www.jgallant.com/wp-content/uploads/2016/01/wrap1.png" alt="JGallant's wrapping map"></img></p>
-<p>OpenSimplex noise, JGallant, ...</p>
-<h2><a class="header" href="#village-creation" id="village-creation">Village creation</a></h2>
-<p>Random walker, ...</p>
+<h2><a class="header" href="#generate-a-world-map" id="generate-a-world-map">Generate a world map</a></h2>
+<p><img src="http://www.jgallant.com/wp-content/uploads/2016/01/biomesrender.png" alt="JGallant's World Map" /></p>
+<p>To make the world map, we followed <a href="http://www.jgallant.com/procedurally-generating-wrapping-world-maps-in-unity-csharp-part-1/">JGallant's <em>Procedurally Generating
+Wrapping World Maps in Unity C#</em></a>
+tutorial. The tutorial is for Unity and C#, but JGalant provides enough
+information for us to write the code for Godot in GDScript. Our code can be
+found <a href="https://github.com/cleap/s21-game-is/tree/main/Procedural%20World%20Demo/WrappingMap">here</a>.</p>
+<p>We followed JGallant's tutorial to generate our height map, moisture map, and
+heat map, which we then used to define biomes. The map also wraps on both
+axes, so that the left edge lines up with the right edge, and the top edge
+lines up with the bottom edge. JGallant's tutorial also goes
+deeper, identifying specific lakes in the map and generating rivers based on
+gradient descent. We did not follow the tutorial this far, although we would
+like to in the future.</p>
+<h2><a class="header" href="#village-and-cave-generation" id="village-and-cave-generation">Village and cave generation</a></h2>
+<p><img src="screenshots/caves.PNG" alt="Cave Generation Screenshot" /></p>
+<p>We also generated villages, following <a href="https://github.com/GDQuest/godot-procedural-generation/tree/master/godot/BasicDungeon/01.Rectangular">GDQuest's dungeon generator tutorial</a>.
+This method is originally meant for generating caves, which we wanted to add
+to our mountains. Later down the line, we realized that we could also use
+this method to generate villages. Instead of placing a rectangular room, we
+place a house that is scaled to the size of the room.</p>
 <h2><a class="header" href="#combining-the-two" id="combining-the-two">Combining the two</a></h2>
-<p>Minecraft, systems, ...</p>
+<p>To combine the two, we used a 'village-plot-request system.' First, we generate
+our world terrain. Then, the world generation script asks the terrain for
+some number of village plots of a certain size. The terrain searches for valid
+spots on the terrain that could fit the plots. Right now, the check just
+chooses random spots that are inside the map, but this could be modified to
+take terrain height or biome into consideration. The terrain then gives the
+world generation script coordinates on the map to place villages. The village
+generation script then generates villages of the specified size, then placing
+them on the map.</p>
 
                     </main>
 
@@ -222,21 +249,6 @@ techniques we used to generate worlds.</p>
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
