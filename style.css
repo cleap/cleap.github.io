@@ -29,6 +29,15 @@ footer a:visited {
 footer a:hover {
 	color: #000;
 }
+article a:link {
+	color: #000;
+}
+article a:visited {
+	color: #000;
+}
+article a:hover {
+	color: #C00;
+}
 nav {
 	height: 3.5rem;
 	line-height: 1.3rem;
