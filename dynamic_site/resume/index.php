@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<?php include '../include/head.php'; ?>
+		<link rel="canonical" href="https://cleap.github.io/resume">
 	</head>
 	<body>
 		<header class="header">
