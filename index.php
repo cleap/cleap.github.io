@@ -1,34 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Christopher Leap</title>
-
-		<base href="/" />
-
-		<link rel="stylesheet" href="style/style.css" />
+		<?php include 'include/head.php'; ?>
 	</head>
 	<body>
 		<header class="header">
-			<nav>
-				<div class="nav-items">
-					<a href="/">About</a>
-					<a href="/projects/">Projects</a>
-					<a href="/resume/">Resumé</a>
-				</div>
-				<div class="nav-socials">
-					<a target="_blank" href="https://github.com/cleap">
-						<img class="icon" alt="GitHub" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>
-					</a>
-					<a href="#">
-						<img class="icon" alt="YouTube" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/youtube.svg"/>
-					</a>
-					<a target="_blank" href="mailto:cleapdev@gmail.com">
-						<img class="icon" alt="Email" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg"/>
-					</a>
-				</div>
-			</nav>
+			<?php include 'include/nav.php'; ?>
 			<h1>Christopher Leap</h1>
 			<h2>Undergraduate Student & FOSS Enjoyer</h2>
 		</header>
@@ -63,9 +40,7 @@
 			</p>
 		</article>
 		<footer>
-			<p>
-				Icons by <a target="_blank" href="https://simpleicons.org">Simple Icons</a>
-			<p>
+			<?php include 'include/footer.php' ?>
 		</footer>
 	</body>
 </html>

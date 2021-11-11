@@ -96,5 +96,7 @@ article p {
 	max-width: 30rem;
 	margin-left: auto;
 	margin-right: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: autho;
 	hyphens: auto;
 }
