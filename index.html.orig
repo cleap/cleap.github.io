@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christopher Leap</title>
+<base href="/">
+<link rel="stylesheet" href="style/style.css">
+	</head>
+	<body>
+		<header class="header">
+			<nav>
+	<div class="nav-items">
+		<a href="">About</a>
+		<a href="projects/">Projects</a>
+		<a href="resume/">Resumé</a>
+	</div>
+	<div class="nav-socials">
+		<a target="_blank" href="https://github.com/cleap">
+			<img class="icon" alt="GitHub" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg"/>
+		</a>
+		<a target="_blank" href="https://youtu.be/dQw4w9WgXcQ">
+			<img class="icon" alt="YouTube" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/youtube.svg"/>
+		</a>
+		<a target="_blank" href="https://cleap.itch.io">
+			<img class="icon" alt="itch.io" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/itchdotio.svg"/>
+		</a>
+		<a target="_blank" href="mailto:cleapdev@gmail.com">
+			<img class="icon" alt="Email" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/gmail.svg"/>
+		</a>
+	</div>
+</nav>
+			<h1>Christopher Leap</h1>
+			<h2>Undergraduate Student & FOSS Enjoyer</h2>
+		</header>
+		<article>
+			<p>
+				Hello! My name is Christopher Leap. I am
+				currently an undergraduate student at the
+				<a target="_blank" href="https://www.unm.edu">
+					University of New Mexico</a>.
+				This site is currently under construction,
+				but if there's anything you'd like to know,
+				feel free to
+				<a target="_blank" href="mailto:cleapdev@gmail.com">
+					email me</a>.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur
+				adipiscing elit. Cras risus odio, aliquet ut
+				nunc eu, fringilla pharetra sem. Ut sed
+				accumsan sapien. Nulla porta viverra nisl, vel
+				euismod enim efficitur in. Aliquam dictum
+				turpis lectus, non suscipit est mollis
+				pharetra. Praesent in diam sit amet tortor
+				blandit congue non non mauris. Sed non leo
+				nibh. Nam tincidunt lorem vitae dapibus
+				finibus. Nulla accumsan purus odio, tincidunt
+				mollis eros auctor sit amet. Sed eget odio
+				imperdiet, elementum nisl vel, malesuada metus.
+				Cras sodales at eros non commodo. Vivamus
+				convallis vehicula leo, id rhoncus ligula
+				aliquet eleifend. 
+			</p>
+		</article>
+		<footer>
+			<p>
+	Icons by <a target="_blank" href="https://simpleicons.org">Simple Icons</a>
+<p>
+		</footer>
+	</body>
+</html>
