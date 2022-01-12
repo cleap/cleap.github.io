@@ -2,6 +2,7 @@
 	<div class="nav-items">
 		<a href="">About</a>
 		<a href="projects/">Projects</a>
+		<a href="math/">Math</a>
 		<a href="resume/">Resumé</a>
 	</div>
 	<div class="nav-socials">

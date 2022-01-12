@@ -97,6 +97,17 @@ article p {
 	margin-left: auto;
 	margin-right: auto;
 	-webkit-hyphens: auto;
-	-ms-hyphens: autho;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+article ol {
+	font-size: 1rem;
+	font-weight: normal;
+	text-align: left;
+	max-width: 30rem;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
 	hyphens: auto;
 }
